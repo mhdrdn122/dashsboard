@@ -1,0 +1,378 @@
+/* start wrapper */
+.wrapper{
+    grid-template-columns:   repeat(auto-fill,minmax(450px,1fr));  
+}
+/* start welcome */ 
+.welcome .intro img{
+    width: 200px;
+}
+.welcome > img{
+    width: 60px;
+    top: 28%;
+    left: 6%;
+    border: 5px solid #fff;
+    outline: 2px solid #eee;
+}
+.bodyCard{
+    padding: 40px 0 20px 0;
+}
+.link > a{
+     margin: 0 15px 15px auto;
+     transition: all 0.3s;
+}
+.link > a:hover {
+    background-color: var(--blue-alt-color);
+}
+@media (max-width:767px){
+    .wrapper{
+       grid-template-columns: minmax(200px ,1fr);
+       padding: 10px;
+    }
+    .welcome{
+        margin: 10px 0 0 5px ;
+    }
+    .welcome .intro > img {
+        display: none;
+    }
+    .welcome > img {
+        top: 19%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .bodyCard >div {
+        display: block;
+    }
+}
+/* end welcome */
+/*start Quick */
+.quick-body form textarea:focus ,
+ .quick-body form input:focus {
+    outline: none;
+}
+.quick-body form textarea{
+    resize: none;
+    max-height: 180px;
+}
+.quick-body >form input:nth-child(3){
+    transition: 0.5s;
+    margin: 15px 0 15px auto !important;
+}
+.quick-body >form input:nth-child(3):hover{
+    background-color: var(--blue-alt-color) !important ;
+    cursor: pointer;
+}
+/* end Quick */ 
+/* start Targets */ 
+.icon-tar{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(0 117 255 / 20%);
+}
+.icon-tar i{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.target-card{
+    flex: 1;
+}
+.progres{
+    height: 5px;
+    background-color: rgb(0 117 255 / 20%);
+}
+.progres >span {
+    height: 5px;
+}
+.progres >span span {
+ top: -29px;
+ right: -20px;
+ padding: 3px 5px ;
+}
+.progres >span span::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--blue-color);
+    transform: rotate(45deg) translate(-50%);
+    top: 20px;
+    left: 50%;
+}
+.Line-orange .icon-tar {
+    background-color: rgb(245 158 11 / 20%);
+}
+.Line-orange .progres span span::after{
+    background-color: var(--orange-color);
+}
+
+.Line-green .icon-tar {
+    background-color: rgb(34 197 94 / 20%);
+}
+.Line-green .progres span span::after{
+    background-color: var(--green-color);
+}
+/* end Targets */ 
+/*start news */
+.lines-news .line-news img {
+    width: 100px;
+}
+.lines-news .line-news div{
+    flex: 1;
+    text-align: left;
+}
+/* end news */
+/* start tickets */
+.tickets-cards{
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+}
+.tickets-cards .tickets-card span:nth-child(2){
+    font-size: 25px;
+}
+@media  (max-width:767px){
+    .tickets-cards{
+        grid-template-columns: 1fr ;
+       
+    }
+}
+/* end tickets */
+
+/*start tasks */
+/* end tasks */ 
+
+/* start uploads */
+.lines-uploads img{
+    width: 40px;
+}
+.line-upload > div {
+    flex: 1;
+    text-align: left;
+}
+/* end uploads */
+/* start last projects */
+.projects ul::before{
+    content: '';
+    background-color: var(--blue-color);
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.projects  li{
+margin:30px  ;
+}
+.projects li::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -41px;
+    background-color: white;
+    border: 2px solid #fff;
+    outline: 2px solid var(--blue-color);
+
+}
+.projects li.done::before{
+    background-color: var(--blue-color);
+
+}
+.projects li.carrent::before{
+    background-color: white;
+    animation: pro 0.8s infinite alternate;
+}
+@keyframes pro {
+    form{
+        background-color: white;
+    }
+    to{
+        background-color: var(--blue-color);
+    }
+}
+.last-projects img{
+    bottom: 30px;
+    right: 20px;
+    opacity: 0.2;
+    width: 150px;
+}
+/* end last projects */
+/* start Remainders style */
+ul.rem-list li span.key {
+    width: 15px;
+    height: 15px;
+} 
+ul.rem-list li span.key.blue{
+    background-color: var(--blue-color)
+}
+ul.rem-list li span.key.green{
+    background-color: var(--green-color)
+}
+ul.rem-list li span.key.red{
+    background-color: var(--red-color)
+}
+ul.rem-list li span.key.orange{
+    background-color: var(--orange-color)
+}
+
+ul.rem-list li div.info-rem.blue{
+    border-left: 2px solid var(--blue-color);
+}
+
+ul.rem-list li div.info-rem.green{
+    border-left: 2px solid var(--green-color);
+}
+
+ul.rem-list li div.info-rem.red{
+    border-left: 2px solid var(--red-color);
+}
+
+ul.rem-list li div.info-rem.orange{
+    border-left: 2px solid var(--orange-color);
+}
+/* end Remainders style */
+
+
+/* start last post style */
+.last-posts img{
+    width: 50px;
+}
+.last-posts .disc-post p{
+   line-height: 25px;
+}
+.footer-post span::before{
+    font-family: "Font Awesome 6 Free";
+    display: block;
+    position: absolute;
+    left: -25px;
+    font-size: 16px;
+    top: 0;
+
+}
+.footer-post span:first-child::before{
+    content: '\f004';
+}
+
+.footer-post span:last-child::before{
+    content: '\f086';
+    left: -30px;
+}
+
+/* end last post style */
+
+
+/* start social style */
+.social-items{
+    padding-left: 50px;
+}
+.social-items i{
+    width: 50px;
+    left: -50px;
+    transition: 0.3s;
+}
+.social-items i:hover{
+    transform:  rotate(5deg);
+}
+.social-item.twitter {
+    background-color: rgb(29 161 242 / 20%);
+
+}
+.social-item.twitter i,
+.social-item.twitter a{
+    background-color: rgb(29 161 242 );
+}
+.social-item.twitter span{
+     color: rgb(29 161 242 );
+
+}
+.social-item.facebook {
+    background-color: rgb(29 161 242 /20%);
+
+}
+.social-item.facebook i,
+.social-item.facebook a{
+    background-color: rgb(24 119 242 );
+}
+.social-item.facebook span{
+     color: #1877f2;
+
+}
+.social-item.youtube {
+    background-color: rgba(255, 0, 0, 0.20);
+
+}
+.social-item.youtube i,
+.social-item.youtube a{
+    background-color: red;
+}
+.social-item.youtube span{
+     color: red;
+
+}
+.social-item.linkedin {
+    background-color: rgb(0 119 181 / 20%);
+
+}
+.social-item.linkedin i,
+.social-item.linkedin a{
+    background-color: #0077b5;
+}
+.social-item.linkedin span{
+     color: #0077b5;
+
+}
+/* end social style */
+/* end wrapper */
+
+/* start table */
+.respons-table {
+    overflow-x: auto;
+    border-spacing: 0;
+}
+.respons-table table {
+    min-width: 1000px;
+}
+.respons-table table td {
+    transition: 0.3s;
+    padding: 15px
+}
+.respons-table table tbody td{
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+table tbody tr td:last-child {
+    border-right: 1px solid #eee;
+}
+table tbody tr:hover td{
+    background-color: #faf7f7;
+}
+table img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+table tbody tr td img:not(:first-child){
+    margin-left: -20px;
+}
+
+table .orange{
+    background-color: var(--orange-color);
+}
+
+table .red{
+    background-color: var(--red-color);
+}
+
+table .blue{
+    background-color: var(--blue-color);
+}
+
+table .green{
+    background-color: var(--green-color);
+}
+/* end table */

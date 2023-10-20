@@ -1,0 +1,135 @@
+
+/************ start projects page ************/
+.projects-page{
+    grid-template-columns: repeat(auto-fill,minmax(400px ,1fr));
+}
+.projects-page .date{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.head-project{
+    margin-bottom: 30px;
+}
+
+.projects-page .head-project h4{
+    font-weight: normal;
+}
+.projects-page .team{
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    min-height: 80px;
+}
+
+.projects-page .team a{
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+}
+.projects-page .team a:nth-child(2){
+left:25px
+}
+.projects-page .team a:nth-child(3){
+left:50px
+
+}
+.projects-page .team a:nth-child(4){
+left:75px
+
+}
+.projects-page .team a:nth-child(5){
+left:100px
+
+}
+.projects-page img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #eee;
+}
+.projects-page A:hover{
+    z-index: 2;
+
+}
+.projects-page .skills {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #eee;
+
+}
+.projects-page .skills span{
+    padding: 3px 8px;
+    background-color: #eee;
+    margin: 0 3px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 14px;
+
+}
+
+.project-info{
+    display: flex;
+    justify-content: space-between;
+}
+.project-info .project-prog {
+    width: 200px;
+    height: 8px;
+    position: relative;
+    border-radius: 10px;
+    
+    background-color: #eee;
+}
+
+.project-info .project-prog span{
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+.project-info .project-prog .blue{
+    background-color: var(--blue-color);
+
+}
+.project-info .project-prog .red{
+    background-color: var(--red-color);
+    
+}
+.project-info .project-prog .orange{
+    background-color: var(--orange-color);
+    
+}
+.project-info .project-prog .green{
+    background-color: var(--green-color);
+
+    
+}
+@media (max-width:767px){
+    .projects-page{
+        grid-template-columns: minmax(200px,1fr) !important;
+       
+    }
+    .project{
+        text-align: center;
+    }
+    .head-project{
+        margin: 20px 0;
+    }
+    .project .team {
+        min-height: 40px !important;
+        margin-top: 50px ;
+        
+    }
+   
+    .project .skills{
+        flex-wrap: wrap;
+    }
+   
+
+}
+/************ end projects page ************/

@@ -1,0 +1,195 @@
+/************ start setting page ************/
+.setting-page{
+    grid-template-columns: repeat(auto-fill , minmax(450px,1fr));
+    grid-template-rows: repeat(auto-fill,1fr);
+}
+
+@media (max-width:767px){
+    .setting-page{
+        grid-template-columns: minmax(200px ,1fr);
+    }
+}
+
+/* start control widget */
+.body-control textarea{
+    resize: none;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    height: 200px;
+}
+.body-control textarea:focus{
+    outline: none;
+}
+/* end control widget */
+
+/* start general widget */
+
+.body-general input:focus{
+outline: none;
+}
+.email-input-gen{
+    cursor: no-drop;
+}
+/* end general widget */
+
+/* start security widget */
+@media (max-width:767px){
+    .security-row h3{
+        font-size: 15px
+    }
+}
+/* end security widget */
+
+/* start social widget */
+.social-box i{
+width: 40px;
+height: 40px;
+border-right: none;
+border: 1px solid #ccc;
+border-radius: 5px 0 0 5px;
+background-color: #f7f7f7;
+border-right: none;
+transition: 0.3s all;
+color: #888;
+
+}
+.social-box input{
+    height: 40px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+}
+.social-info   > div:focus-within i{
+ color: #000;
+}
+.social-box  input:focus{
+    outline: 0;
+}
+/* end social widget */
+
+/* start control widgets widget */
+.controls .wid-control label{
+padding-left: 30px;
+
+
+}
+.controls .wid-control input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.controls .wid-control label::before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    border: 1px solid var(--color-gray);
+    top: 1px;
+    left: 5px;
+    border-radius: 5px;
+
+}
+
+.controls .wid-control label:hover:before{
+    border-color: var(--blue-color);
+}
+
+
+.controls .wid-control label::after{
+    font-family: var(--fa-style-family-classic);
+    content: '\f00c';
+    font-weight: 900;
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    font-size: 12px;
+    background-color: var(--blue-color);
+    border-radius: 2px;
+    width: 14px;
+    height: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg);
+    transition: 0.3s all;
+}
+.controls .wid-control input[type="checkbox"]:checked + label::after{
+    transform: scale(1) rotate(0)
+}
+
+/* end control widgets widget */
+
+/* start backup widget */
+.backup-info div label{
+    padding: 0 0 0 30px;
+ 
+}
+.backup div input{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.backup-info div label::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-radius: 50%;
+
+}
+
+.backup-info div label::after{
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-color: var(--blue-color);
+    position: absolute;
+    top: 50%;
+    margin: -8px  auto;
+    transform:scale(0);
+    left: 3px;
+    border-radius: 50%;
+    transition: 0.3s all;
+}
+.backup-info div input[type="radio"]:checked + label::before{
+   border-color: var(--blue-color);
+}
+.backup-info div input[type="radio"]:checked + label::after{
+    transform: scale(1);
+}
+
+.backup-body div label {
+    width: 120px;
+    height: 80px;
+    transition: 0.3s;
+    
+}
+.backup-body div label:hover{
+ border-color: var(--blue-color);
+}
+.backup-body div input[type="radio"]:checked + label{
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+@media (max-width:767px){
+    .backup-body{
+        flex-wrap: wrap;
+    }
+    .backup-body div{
+        width: 100%;
+    }
+    .backup-body div label{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* end backup widget */
+
+/************ end setting page ************/

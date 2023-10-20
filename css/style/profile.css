@@ -1,0 +1,124 @@
+
+/************ start profile page ************/
+
+.profile-content .avatar{
+    max-width: 250px;
+    padding: 30px 0;
+    border-right: 1px solid #eee;
+}
+.profile-content .avatar >img{
+    width: 100px;
+}
+
+.prog-info{
+    height: 4px;
+}
+.prog-info span {
+    top: 0;
+    left: 0;
+}
+
+.profile-info .box{
+ transition: 0.5s;
+}
+
+.profile-info .toggle-switch{
+    height: 20px;
+}
+.profile-info .toggle-switch::before{
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    font-size: 10px;
+}
+
+.check-toggle:checked + .toggle-switch::before {
+    left: 60px !important;
+}
+.profile-info .box:hover{
+background-color: #f9f9f9;
+}
+
+.profile-info .box >div{
+    min-width: 220px;
+    padding: 0 30px 0 0;
+}
+@media (max-width:767px) {
+    .avatar{
+        width: 100% ;
+        max-width: 600px !important;
+        border: none;
+    }
+    .profile-content{
+        flex-wrap: wrap;
+    }
+    .profile-info .box  div ,  .profile-info .box label {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+    .profile-info .box label{
+        width: 75px;
+    }
+
+}
+
+/* start others widgets */
+
+@media (max-width:767px){
+    .other-widgets{
+        flex-direction: column;
+    }
+    .skills ul {
+        text-align: center;
+    }
+}
+.skills{
+    flex-grow: 1;
+}
+
+.skills ul li{
+    margin: 30px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.skills ul li span {
+    display:inline-block;
+    margin: 5px 0 ;
+
+}
+
+.activty{
+    flex-grow: 2;
+}
+.activty ul li {
+    padding: 20px 0;
+}
+
+.activty ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+.activty ul li img{
+    width: 70px;
+}
+@media (max-width:767px){
+    .activty{
+        margin: 10px 0 !important;
+    }
+    .activty ul li {
+        flex-direction: column;
+        text-align: center;
+    }
+    .activty ul li div {
+        padding: 0;
+    }
+    .activty ul li div p{
+        padding: 2px 0;
+        font-size: 16px;
+    }
+}
+/* end others widgets */
+
+/************ end profile page ************/
