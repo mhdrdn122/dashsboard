@@ -42,6 +42,9 @@
     .bodyCard >div {
         display: block;
     }
+    .p-20{
+        padding: 10px !important;
+    }
 }
 /* end welcome */
 /*start Quick */

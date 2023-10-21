@@ -176,4 +176,10 @@ background-color: #f6f6f6;
     width: 70px ;
     background-color: black;
 }
+
+@media (max-width:767px){
+    .m-20{
+        margin: 10px !important;
+    }
+}
 /* end content */

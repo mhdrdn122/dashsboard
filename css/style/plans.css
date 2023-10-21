@@ -43,4 +43,6 @@ ul.list-plan li:not(:last-of-type){
 ul.list-plan li i.help{
     cursor: pointer;
 }
+
+
 /************ end plans page ************/
